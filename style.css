@@ -221,6 +221,44 @@ section #text {
     margin: 2%;
 }
 
+.gallery-section p {
+    margin: 10px 20px 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 20px 20px;
+}
+
+.gallery-card {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-card span {
+    display: block;
+    padding: 12px 16px 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+}
+
 
 /* Make all fishes image as absolute.. To overlap with background */
 .fishes {
