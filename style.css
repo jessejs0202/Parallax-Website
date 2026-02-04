@@ -221,6 +221,65 @@ section #text {
     margin: 2%;
 }
 
+.album {
+    position: relative;
+    padding: 6% 10% 8%;
+    background: #06415b;
+    z-index: 40;
+}
+
+.album__header h2 {
+    font-size: 3em;
+}
+
+.album__header p {
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.album__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.album__card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.album__card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.album__card figcaption {
+    font-weight: 600;
+}
+
+.album__link {
+    align-self: flex-start;
+    text-decoration: none;
+    background: #ffffff;
+    color: #003549;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.album__link:hover {
+    background: #003549;
+    color: white;
+}
+
 
 /* Make all fishes image as absolute.. To overlap with background */
 .fishes {
